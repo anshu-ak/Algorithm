@@ -24,14 +24,14 @@ void insertattail(node* &head,int val){
     }
 }
 node* mergeRecursive(node* &head1,node* &head2){
-    //One case is left i.e 🔴Base case
+    //One case is left i.e 🔴Base case Starts...
     if(head1==NULL){
         return head2;
     
     }
     if(head2==NULL){
         return head1;
-    }
+    }//base case ends
     node* result;
     if(head1->data<head2->data){
         result=head1;
